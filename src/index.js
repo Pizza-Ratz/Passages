@@ -15,13 +15,13 @@ function arrivalsToNotes(stopData, line) {
     .map((st, idx) => ({
       pitch: scale.note(st.arrival.time % 7).midi(),
       quantizedStartStep: idx,
-      quantizedEndStep: idx + 1 
+      quantizedEndStep: idx + 1
     }))
 }
 
 async function stopToSequence(stopId, line) {
   const req = await fetch(
-    `https://cors-anywhere.herokuapp.com/https://f7dc68cb5b60.ngrok.io/systems/us-ny-subway/stops/${stopId}`,
+    `http://localhost:8010/proxy/systems/us-ny-subway/stops/${stopId}`,
     {
       headers: {
         origin: '*'
