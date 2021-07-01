@@ -13,7 +13,7 @@ function arrivalsToNotes(stopData, line) {
   return stopData.stop_times
     .filter(t => (line) ? t.trip.route.id === line : true)
     .map((st, idx) => ({
-      pitch: scale.get(st.arrival.time % 7).midi(),
+      pitch: scale.note(st.arrival.time % 7).midi(),
       quantizedStartStep: idx,
       quantizedEndStep: idx + 1
     }))
