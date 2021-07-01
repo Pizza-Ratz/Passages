@@ -1,3 +1,5 @@
+const teoria = require('teoria')
+
 const line = 'A'
 const stopId = 'A24'
 
@@ -70,3 +72,9 @@ stopToSequence(stopId, line)
 document.getElementById('line').innerText = line
 document.getElementById('playOrig').onclick = () => handlePlay(origSequence)
 document.getElementById('playGen').onclick = () => handlePlay(generatedSequence)
+
+const a4 = teoria.note('A4')
+const scale = a4.scale('ionian')
+for (let note = 0; note < 12; note++) {
+  console.log(scale.get(note).coord)
+}
