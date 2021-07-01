@@ -2,6 +2,8 @@ const teoria = require('teoria')
 
 const line = 'A'
 const stopId = 'A24'
+const baseNote = teoria.note(`${line}4`)
+const scale = baseNote.scale('lydian')
 
 /**
  * Given the data for a stop, filters arrival data for selected line and produces
@@ -11,15 +13,15 @@ function arrivalsToNotes(stopData, line) {
   return stopData.stop_times
     .filter(t => (line) ? t.trip.route.id === line : true)
     .map((st, idx) => ({
-      pitch: st.arrival.time % 9 + 60,
+      pitch: scale.note(st.arrival.time % 7).midi(),
       quantizedStartStep: idx,
-      quantizedEndStep: idx + 1 
+      quantizedEndStep: idx + 1
     }))
 }
 
 async function stopToSequence(stopId, line) {
   const req = await fetch(
-    `https://cors-anywhere.herokuapp.com/https://f7dc68cb5b60.ngrok.io/systems/us-ny-subway/stops/${stopId}`,
+    `http://localhost:8010/proxy/systems/us-ny-subway/stops/${stopId}`,
     {
       headers: {
         origin: '*'
@@ -72,9 +74,3 @@ stopToSequence(stopId, line)
 document.getElementById('line').innerText = line
 document.getElementById('playOrig').onclick = () => handlePlay(origSequence)
 document.getElementById('playGen').onclick = () => handlePlay(generatedSequence)
-
-const a4 = teoria.note('A4')
-const scale = a4.scale('ionian')
-for (let note = 0; note < 12; note++) {
-  console.log(scale.get(note).midi())
-}
