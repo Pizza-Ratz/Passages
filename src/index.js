@@ -76,5 +76,5 @@ document.getElementById('playGen').onclick = () => handlePlay(generatedSequence)
 const a4 = teoria.note('A4')
 const scale = a4.scale('ionian')
 for (let note = 0; note < 12; note++) {
-  console.log(scale.get(note).coord)
+  console.log(scale.get(note).midi())
 }
