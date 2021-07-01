@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "webpack --mode development && babel dist -d public",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "proxy": "lcp --proxyUrl https://f7dc68cb5b60.ngrok.io"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",
