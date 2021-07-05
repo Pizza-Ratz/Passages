@@ -7,4 +7,4 @@ steps:
   args: ['run', 'build']
 - name: gcr.io/cloud-builders/gsutil
   dir: App/public
-  args: ['cp', '*', 'gs://passages_app_stg/']
+  args: ['cp', '*', 'gs://mta-music-passages-staging-app-bucket/']
