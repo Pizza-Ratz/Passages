@@ -7,10 +7,10 @@ const IndexPage = () => {
   return (
     <>
       <Layout>
-      <TrainMap />
-        <div className="stars"></div>
-        <div className="twinkling"></div>
-        <div className="clouds"></div>
+        <TrainMap />
+          <div className="stars"></div>
+          <div className="twinkling"></div>
+          <div className="clouds"></div>
       </Layout>
     </>
   );
