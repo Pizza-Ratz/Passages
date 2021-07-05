@@ -1,0 +1,10 @@
+steps:
+- name: gcr.io/cloud-builders/npm
+  dir: App
+  args: ['run', 'install']
+- name: gcr.io/cloud-builders/npm
+  dir: App
+  args: ['run', 'build']
+- name: gcr.io/cloud-builders/gsutil
+  dir: App/public
+  args: ['cp', '*', 'gs://passages_app_stg/']
