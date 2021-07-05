@@ -57,12 +57,14 @@ animation:move-twink-back 200s linear infinite;
 /* Train Map */
 
 .train-container{
+  position: relative;
   z-index: 2;
 }
 
-#EntireMap{
-  z-index: 2;
-}
+/* #EntireMap{
+  position: absolute;
+  z-index: 3;
+} */
 
 .cls-1, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-2, .cls-21, .cls-24, .cls-25, .cls-27, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9{
 fill: none; }
