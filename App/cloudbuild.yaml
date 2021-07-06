@@ -1,0 +1,5 @@
+steps:
+- name: docker
+  dir: App
+  args: ['build', '.', '-t', 'gcr.io/mta-music-318515/passages:latest']
+images: ['gcr.io/mta-music-318515/passages:latest']
