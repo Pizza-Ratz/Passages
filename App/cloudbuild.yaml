@@ -2,4 +2,8 @@ steps:
 - name: docker
   dir: App
   args: ['build', '.', '-t', 'gcr.io/mta-music-318515/passages:latest']
-images: ['gcr.io/mta-music-318515/passages:latest']
+- name: "docker"
+  args: ['push', 'gcr.io/mta-music-318515/passages:latest']
+- name: "gcr.io/cloud-builders/gke-deploy"
+  dir: App/.kube
+  args: ['run', '--filename=staging.yaml', '--image=gcr.io/mta-music-318515/passages:latest', '--location=us-central1', '--cluster=production-1']
