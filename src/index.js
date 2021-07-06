@@ -9,7 +9,15 @@ const scale = baseNote.scale('lydian')
  * Tone.js demo
  */
 
- const noteMapping = {
+// Initialize audio context
+var AudioContext = window.AudioContext || window.webkitAudioContext;
+
+var audioCtx = new AudioContext({
+  latencyHint: 'interactive',
+  sampleRate: 44100,
+});
+
+const noteMapping = {
   a: 'C4',
   w: 'C#4',
   s: 'D4',
@@ -32,7 +40,6 @@ const synth = new Tone.MonoSynth();
 const dist = new Tone.Distortion(0.5);
 const vol = new Tone.Volume(0);
 synth.chain(dist, vol, Tone.Destination);
-
 const distSlider = document.getElementById('distortion');
 const volSlider = document.getElementById('volume');
 
@@ -40,6 +47,7 @@ document.addEventListener('keydown', evt => {
   // evt.code is always formatted as 'KeyA', 'KeyQ', etc.
   const char = evt.code.slice(3).toLowerCase();
   if (noteMapping[char] && !pressedKeys[char]) {
+    audioCtx.resume();
     pressedKeys[char] = true;
     synth.triggerAttack(noteMapping[char]);
   }
