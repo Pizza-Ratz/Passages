@@ -32,12 +32,7 @@ body {
   to {background-position:-10000px 5000px;}
 }
 
-@keyframes move-clouds-back {
-  from {background-position:0 0;}
-  to {background-position:10000px 0;}
-}
-
-.stars, .twinkling, .clouds {
+.stars, .twinkling {
 position:absolute;
 top:0;
 left:0;
@@ -49,12 +44,12 @@ display:block;
 }
 
 .stars {
-background:#000 url(../images/stars.png) repeat top center;
+background:#000 url(../images/stars.png) repeat;
 z-index:0;
 }
 
 .twinkling{
-background:transparent url(../images/twinkling.png) repeat top center;
+background:transparent url(../images/twinkling.png) repeat;
 z-index:1;
 animation:move-twink-back 200s linear infinite;
 }
@@ -65,11 +60,6 @@ animation:move-twink-back 200s linear infinite;
   position: relative;
   z-index: 2;
 }
-
-/* #EntireMap{
-  position: absolute;
-  z-index: 3;
-} */
 
 .cls-1, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-2, .cls-21, .cls-24, .cls-25, .cls-27, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9{
 fill: none; }
@@ -150,3 +140,20 @@ fill: none; }
 .cls-27{
   stroke:#3c6296;
 }
+
+/* Train Map Details */
+
+.Atrain svg g:hover{
+  transform: scale(1.5) !important;
+  color: #fff;
+  filter:
+  drop-shadow(0 0 0.2rem #fff),
+  drop-shadow(0 0 0.3rem #fff),
+  drop-shadow(0 0 0.4rem #fff),
+  drop-shadow(0 0 0.5rem rgb(0, 238, 255)),
+  drop-shadow(0 0 0.6rem rgb(0, 238, 255)),
+  drop-shadow(0 0 0.7rem rgb(0, 238, 255)),
+  drop-shadow(0 0 0.8rem rgb(0, 238, 255)),
+  drop-shadow(0 0 0.9rem rgb(0, 238, 255));
+} 
+
