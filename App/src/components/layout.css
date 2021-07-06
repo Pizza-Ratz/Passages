@@ -143,17 +143,3 @@ fill: none; }
 
 /* Train Map Details */
 
-.Atrain svg g:hover{
-  transform: scale(1.5) !important;
-  color: #fff;
-  filter:
-  drop-shadow(0 0 0.2rem #fff),
-  drop-shadow(0 0 0.3rem #fff),
-  drop-shadow(0 0 0.4rem #fff),
-  drop-shadow(0 0 0.5rem rgb(0, 238, 255)),
-  drop-shadow(0 0 0.6rem rgb(0, 238, 255)),
-  drop-shadow(0 0 0.7rem rgb(0, 238, 255)),
-  drop-shadow(0 0 0.8rem rgb(0, 238, 255)),
-  drop-shadow(0 0 0.9rem rgb(0, 238, 255));
-} 
-
