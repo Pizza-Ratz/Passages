@@ -2,6 +2,7 @@
   <head>
     <title>Magenta JS Music Playground</title>
     <script src="https://cdn.jsdelivr.net/npm/@magenta/music@^1.0.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.26/Tone.js" integrity="sha512-+esjJ8NSEfoB5Sr8R7jTcYxCR1Bd6q9C+WQC0JA2UXVPT8Mlo/TJqqyp0qeeoxFzkAaa8t6tZCHLGmw3oNI2Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
 
   <body>
@@ -25,6 +26,17 @@
     <div>
       <button id="playGen">Play Generated</button>
     </div>
+    <br/>
+    <p>Play keys with keyboard: a, w, s, e, d, f, t, g, y, h, <br/> u, j, i, k keys correspond to an octave of a piano</p>
+    <div class="slidecontainer">
+      <div>Distortion amount</div>
+      <input type="range" min="0" max="100" value="50" class="slider" id="distortion">
+    </div>
+    <div class="slidecontainer">
+      <div>Volume</div>
+      <input type="range" min="0" max="60" value="60" class="slider" id="volume">
+    </div>
+
   </body>
 
   <script src="/public/main.js"></script>
