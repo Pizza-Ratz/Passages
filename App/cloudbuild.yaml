@@ -1,10 +1,5 @@
 steps:
-- name: gcr.io/cloud-builders/npm
+- name: docker
   dir: App
-  args: ['run', 'install']
-- name: gcr.io/cloud-builders/npm
-  dir: App
-  args: ['run', 'build']
-- name: gcr.io/cloud-builders/gsutil
-  dir: App/public
-  args: ['-m', 'cp', '*', 'gs://mta-music-passages-staging-app-bucket/']
+  args: ['build', '.', '-t', 'gcr.io/mta-music-318515/passages:latest']
+images: ['gcr.io/mta-music-318515/passages:latest']
