@@ -2,11 +2,15 @@
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2399.09 2668.91">
   <defs>
-    <filter id="glow">
-      <feDropShadow dx="0" dy="0" stdDeviation="0.5"
-          flood-color="cyan"/>
+    <filter id="luminosity-noclip" x="183.37" y="310.23" width="2417.52" height="1703.28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feBlend in="SourceGraphic" in2="bg"/>
     </filter>
 
+    <filter id="blurMe">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+
+    
     <style>
 .cls-1,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-2,.cls-21,.cls-24,.cls-25,.cls-27,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9{fill:none;}.cls-1{stroke:#0a9347;}.cls-1,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-2,.cls-25,.cls-27,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9{stroke-linejoin:round;}.cls-1,.cls-10,.cls-11,.cls-13,.cls-24,.cls-25,.cls-3,.cls-4,.cls-5,.cls-6,.cls-8,.cls-9{stroke-width:9px;}.cls-2,.cls-3{stroke:#fccc11;}.cls-12,.cls-2,.cls-7{stroke-width:16px;}.cls-4{stroke:#f26423;}.cls-5,.cls-7{stroke:#1e429b;}.cls-6{stroke:#a8aaad;}.cls-8{stroke:#ac4399;}.cls-12,.cls-9{stroke:#ef3830;}.cls-10{stroke:#808184;}.cls-11{stroke:#9a6733;}.cls-13{stroke:#6fbe46;}.cls-14,.cls-15,.cls-19{stroke:#4e4e4e;}.cls-14,.cls-15,.cls-27{stroke-width:5px;}.cls-15{stroke-dasharray:5 1;}.cls-16{fill:#010101;}.cls-17,.cls-19,.cls-22,.cls-23{fill:#fff;}.cls-18{fill:#656565;}.cls-20{fill:#df1d37;}.cls-21,.cls-23{stroke:#fff;}.cls-22{stroke:#037160;}.cls-24{stroke:#ed3a24;}.cls-25{stroke:#086cb6;}.cls-26{fill:#95caee;}.cls-27{stroke:#3c6296;}
 
@@ -2489,10 +2493,8 @@
   
   <g id="ATRAIN">
     <path id="polyline2684-2" data-name="polyline2684" class="cls-10" d="M2343.92,1869l114-114-4.13-4.13-85.25-85.25" transform="translate(-187.26 -54.92)" />
-    <g id="polyline2792-2" data-name="polyline2792">
-      <filter id="glow">
+    <g id="polyline2792-2" data-name="polyline2792" filter="url(#luminosity-noclip)">
       <path class="cls-5" d="M935,1993.76a4,4,0,0,1-4-4V1855.91l-61.72-61.72h-326a4,4,0,0,1-4-4V1555.54l-180-103.89a4,4,0,0,1-2-3.46v-710l-8.82-8.83a4,4,0,0,1-1.18-2.83V580.16l-82.1-81.31a4,4,0,0,1-1.09-2l-59.71-59.7a4,4,0,0,1-1.17-2.83V362.49a4,4,0,0,1,1.17-2.83l29.15-29.15a4,4,0,0,1,5.65,5.66l-28,28v68.5l132.9,132.9a4.3,4.3,0,0,1,.65.84l9.34,9.26a4,4,0,0,1,1.18,2.84v146.4l8.83,8.83a4,4,0,0,1,1.17,2.82v709.34l180,103.89a4,4,0,0,1,2,3.47v233H870.89a4,4,0,0,1,2.83,1.17l64.06,64.06a4,4,0,0,1,1.17,2.83v131.51l182.81-.09,36.21-35.49a4,4,0,0,1,1.17-2.67l13.83-13.82a4,4,0,0,1,2.83-1.17h104.61L1395,1866.38,1680.38,1581a4,4,0,0,1,5.65,0L1735,1630l171.44-171.44a4,4,0,0,1,2-1.08L1964,1401.5v-14.58a4,4,0,0,1,1.18-2.84l69.42-69a4,4,0,0,1,5.65,0l421.53,422h8.48L2575,1632.3a4,4,0,0,1,5.65,5.66l-106,106a4,4,0,0,1-2.83,1.17h-11.8a4,4,0,0,1-2.83-1.18l-419.88-420.37-65.41,65v14.57a4,4,0,0,1-1.16,2.82l-65.08,65.5a4,4,0,0,1-2,1.1l-165.87,165.87a4.1,4.1,0,0,1-5.66,0l-48.92-48.92-283,282.9a4,4,0,0,1-.83.63L1283.48,1940a4,4,0,0,1-2,.54h-104l-10.84,10.84a4,4,0,0,1-1.2,2.73l-39.22,38.44a4,4,0,0,1-2.8,1.14Z" transform="translate(-187.26 -54.92)" />
-    </filter>
     </g>
   
     <g id="g3002-2" data-name="g3002">
