@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "@svgr/webpack": "^5.5.0"
-  },
-  "dependencies": {
-    "gatsby-plugin-svgr": "^3.0.0-beta.0"
-  }
-}
