@@ -59,8 +59,8 @@ animation:move-twink-back 200s linear infinite;
 .train-container{
   position: relative;
   z-index: 2;
-  width: 65%;
-  height: 65%;
+  width: 50%;
+  height: 50%;
 }
 
 
