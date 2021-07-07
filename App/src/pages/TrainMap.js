@@ -16,7 +16,7 @@ const TrainMapSVG = (props) => {
   })
 
   return (
-    <object ref={imgRef} id="svg-object" data={mapUrl} type="image/svg+xml">interactive subway map</object>
+    <object ref={imgRef} id="train-container" data={mapUrl} type="image/svg+xml">interactive subway map</object>
   )
 }
 
