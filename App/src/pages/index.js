@@ -8,9 +8,9 @@ const IndexPage = () => {
     <>
       <Layout>
         <TrainMap />
-          <div className="stars"></div>
-          <div className="twinkling"></div>
-          <div className="clouds"></div>
+        <div className='stars'></div>
+        <div className='twinkling'></div>
+        <div className='clouds'></div>
       </Layout>
     </>
   );
