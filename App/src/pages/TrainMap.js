@@ -11,7 +11,7 @@ const TrainMapSVG = (props) => {
   React.useEffect(() => {
     if (imgRef.current.contentDocument) {
       imgRef.current.contentDocument.getElementById('polyline2792-2')
-        .addEventListener('mouseover', handleMouseOver)
+        // .addEventListener('mouseover', handleMouseOver)
     }
   })
 
