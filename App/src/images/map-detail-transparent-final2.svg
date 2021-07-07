@@ -5,7 +5,12 @@
       <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="white" />
     </filter>
 
+
+    <symbol id="stationMarker">
+      <circle class="cls-16" cx="5" cy="5" r="5" transform="translate(-5, -5)"/>
+    </symbol>
     <style>
+      
       .cls-1, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-2, .cls-20, .cls-23, .cls-24, .cls-26, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
         fill: none;
       }
