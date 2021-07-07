@@ -10,7 +10,7 @@ const TrainMapSVG = (props) => {
 
   React.useEffect(() => {
     if (imgRef.current.contentDocument) {
-      imgRef.current.contentDocument.getElementById('polyline2792-2')
+      imgRef.current.contentDocument.getElementById('polyline2792')
         .addEventListener('mouseover', handleMouseOver)
     }
   })
