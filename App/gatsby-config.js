@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/final-favicon-trans.png",
+        icon: "src/images/favicon.png",
       },
     },
     "gatsby-transformer-remark",
