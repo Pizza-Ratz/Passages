@@ -1,24 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" height="1000" viewBox="0 0 2404.49 2668.91"> 
   <defs>
 
-    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-      <feDropShadow dx="0" dy="0" stdDeviation="1" flood-color="white" />
-		</filter>
-
-    <filter id="radiate" filterUnits="userSpaceOnUse" x="0" y="0" width="200" height="120">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
-      <!-- <feOffset in="blur" dx="4" dy="4" result="offsetBlur" /> -->
-      <feSpecularLighting in="blur" surfaceScale="5" specularConstant=".75" specularExponent="20" lighting-color="#bbbbbb" result="specOut">
-        <fePointLight x="-5000" y="-10000" z="20000" />
-      </feSpecularLighting>
-      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut" />
-      <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
-<!--      <feMerge>
-        <feMergeNode in="offsetBlur" />
-        <feMergeNode in="litPaint" />
-      </feMerge> -->
-    </filter>
-
     <filter id="pulsate" x="-100%" y="-100%" width="300%" height="300%">
       <feDropShadow dx="0" dy="0" stdDeviation="1" flood-color="white" result="shadow1" />
       <feMorphology in="shadow1" operator="dilate" radius="1" >
@@ -145,12 +127,11 @@
         from {
             stroke-opacity: 100%;
             brightness(150%);
-            filter: blur(50%);
         }
         to {
             stroke-width: 10%;
             brightness(0%);
-            filter: blur(100%);
+            filter: blur(100);
             stroke-opacity: 0%;
         }
       }
@@ -258,40 +239,40 @@
     </g>
     <g class="stops">
       <g>
-        <circle class="station-highlight selected" cx="42.03" cy="285.72" r="7" />
-        <circle class="station end-of-line selected" cx="42.03" cy="285.72" id="A02_INWOOD207" r="7" />
+        <circle class="station end-of-line" id="A02_INWOOD207" cx="42.03" cy="285.72" r="7" />
+        <circle class="station-highlight" cx="42.03" cy="285.72" r="7" />
       </g>
       <g>
-        <circle class="station-highlight" cx="785.64" cy="1934.08" r="5" />
         <circle class="station" id="A42_HOYTSCHERMERHORN" cx="785.64" cy="1934.08" r="5" />
+        <circle class="station-highlight" cx="785.64" cy="1934.08" r="5" />
       </g>
       <g>
-        <circle class="station-highlight" cx="549.24" cy="1575.41" r="5"  transform="translate(-195.26 -59.92)" />
         <circle class="station" id="A32_W4TH_WASHINGTONSQ" cx="549.24" cy="1575.41" r="5"  transform="translate(-195.26 -59.92)" />
+        <circle class="station-highlight" cx="549.24" cy="1575.41" r="5"  transform="translate(-195.26 -59.92)" />
       </g>
       <g>
+        <circle class="station end-of-line" id="H11_FARROCKAWAY" cx="2579.63" cy="1645.49" r="7" transform="translate(-195.26 -59.92)"/>
         <circle class="station-highlight"  cx="2579.63" cy="1645.49" r="7" transform="translate(-195.26 -59.92)"/>
-        <circle class="station" id="H11_FARROCKAWAY" cx="2579.63" cy="1645.49" r="7" transform="translate(-195.26 -59.92)"/>
       </g>
       <g>
-        <circle class="station-highlight" cx="1673.71" cy="1606.62" r="5"  transform="translate(-195.26 -59.92)" />
         <circle class="station" id="A51_BROADWAYJUNCTION" cx="1673.71" cy="1606.62" r="5"  transform="translate(-195.26 -59.92)" />
+        <circle class="station-highlight" cx="1673.71" cy="1606.62" r="5"  transform="translate(-195.26 -59.92)" />
       </g>
       <g>
-        <circle class="station-highlight" cx="369.79" cy="1088.25" r="5"  transform="translate(-195.26 -59.92)" />
         <circle class="station" id="A24_COLUMBUSCIRCLE" cx="369.79" cy="1088.25" r="5"  transform="translate(-195.26 -59.92)" />
+        <circle class="station-highlight" cx="369.79" cy="1088.25" r="5"  transform="translate(-195.26 -59.92)" />
       </g>
       <g>
-        <circle class="station-highlight" cx="369.79" cy="1255.85" r="5"  transform="translate(-195.26 -59.92)" />
         <circle class="station" id="A28_Penn-Station" cx="369.79" cy="1255.85" r="5"  transform="translate(-195.26 -59.92)" />
+        <circle class="station-highlight" cx="369.79" cy="1255.85" r="5"  transform="translate(-195.26 -59.92)" />
       </g>
       <g>
-        <circle class="station-highlight" cx="745.9" cy="1794.42" r="5"  transform="translate(-195.26 -59.92)" />
         <circle class="station" id="A38_FULTON" cx="745.9" cy="1794.42" r="5"  transform="translate(-195.26 -59.92)" />
+        <circle class="station-highlight" cx="745.9" cy="1794.42" r="5"  transform="translate(-195.26 -59.92)" />
       </g>
       <g>
-        <circle class="station-highlight" cx="1226.9" cy="1941.75" r="5"  transform="translate(-195.26 -59.92)" />
         <circle class="station" id="A43_Lafayette-Av" cx="1226.9" cy="1941.75" r="5"  transform="translate(-195.26 -59.92)" />
+        <circle class="station-highlight" cx="1226.9" cy="1941.75" r="5"  transform="translate(-195.26 -59.92)" />
       </g>
     </g>
   </g>
