@@ -11,7 +11,7 @@ const TrainMapSVG = (props) => {
   React.useEffect(() => {
     if (imgRef.current.contentDocument) {
       const xmlDoc = imgRef.current.contentDocument
-      const allStations = [xmlDoc.querySelectorAll('use[href="#stationMarker"]')]
+      const allStations = xmlDoc.querySelectorAll('use[href="#stationMarker"]')
       allStations.forEach(s => s.addEventListener('click', handleStationSelect))
     }
   })
