@@ -136,9 +136,6 @@
         }
       }
 
-      .route:hover {
-        <!-- filter: url(#glow) -->
-      }
       .path>line,.path>path {
         fill: green;
         stroke: green;
@@ -173,8 +170,10 @@
         fill-opacity: 0;
         stroke-width: 4;
       }
-      .route ~path:hover, .route ~line:hover {
-        <!-- filter: url(#glow) -->
+
+      .route path:hover, .route line:hover {
+        filter: brightness(150%);
+        filter: drop-shadow(5 5 10 white);
       }
 
       #viewbox {
