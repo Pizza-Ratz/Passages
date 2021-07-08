@@ -13,7 +13,6 @@ let selectedStations = [
 ]
 
 function handleStationSelect(evt) {
-  console.log(evt)
   // for already-selected station, de-select it
   if (selectedStations.includes(evt.target.mtaId)) {
     //remove selected from the target element's list of classes
@@ -23,11 +22,9 @@ function handleStationSelect(evt) {
     //remove this station from the list of selected stations
     selectedStations = selectedStations.filter(s => s !== evt.target.mtaId)
   } else {
-    console.log(evt.target.previousElementSibling)
     evt.target.classList.add("selected");
     evt.target.previousElementSibling.classList.add("selected");
     selectedStations.push(evt.target.mtaId);
-    console.log(selectedStations)
   }
 }
 
