@@ -1,9 +1,31 @@
 <svg id="Entire_Map" data-name="Entire Map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2397.13 2668.91">
   <defs>
 
-    <filter id="glow">
-      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="white" />
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feDropShadow dx="0" dy="0" stdDeviation="1" flood-color="white" />
+		</filter>
+
+    <filter id="radiate" filterUnits="userSpaceOnUse" x="0" y="0" width="200" height="120">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <!-- <feOffset in="blur" dx="4" dy="4" result="offsetBlur" /> -->
+      <feSpecularLighting in="blur" surfaceScale="5" specularConstant=".75" specularExponent="20" lighting-color="#bbbbbb" result="specOut">
+        <fePointLight x="-5000" y="-10000" z="20000" />
+      </feSpecularLighting>
+      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut" />
+      <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
+<!--      <feMerge>
+        <feMergeNode in="offsetBlur" />
+        <feMergeNode in="litPaint" />
+      </feMerge> -->
     </filter>
+
+    <filter id="pulsate" x="-100%" y="-100%" width="300%" height="300%">
+      <feDropShadow dx="0" dy="0" stdDeviation="1" flood-color="white" result="shadow1" />
+      <feMorphology in="shadow1" operator="dilate" radius="1" >
+				<animate attributeName="radius" values="0;1;0" dur="1s" repeatCount="indefinite" />
+			</feMorphology>
+    </filter>
+
 
     <symbol id="stationMarker">
       <circle class="cls-16" cx="5" cy="5" r="5"/>
@@ -118,8 +140,62 @@
         stroke: #3c6296;
       }
 
-      g>path:hover {
-        filter: url(#glow);
+      @keyframes pingResize {
+        from {
+            scale: 0%;
+            opacity: 100%;
+            stroke-width: 300%;
+            brightness(150%);
+            filter: blur(50%);
+        }
+        to {
+            scale: 10%;
+            translate: -5% -5%;
+            stroke-width: 100%;
+            brightness(0%);
+            filter: blur(100%);
+            opacity: 0%;
+        }
+      }
+
+      .route:hover {
+        filter: url(#glow)
+      }
+      .path>line,.path>path {
+        fill: green;
+        stroke: green;
+      }
+      #Atrain {
+        stroke: #0060B6;
+      }
+      #Dtrain {
+        stroke: #FF7F00;
+      }
+      .station {
+        fill: #FFFFFF;
+        stroke: #FFFFFF;
+      }
+      .station:hover {
+        filter: url(#pulsate)
+      }
+      .station.highlight {
+        <!-- transition: all .2s ease-in-out; -->
+        fill: none;
+        <!-- display: none; -->
+      }
+      .station.highlight.selected {
+        display: inherit;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: infinite;
+        animation-name: pingResize;
+      }
+      .end-of-line {
+        fill: #1F1F1F;
+        stroke-width: 4;
+      }
+      .route ~path:hover, .route ~line:hover {
+        filter: url(#glow)
       }
 
     </style>
@@ -180,10 +256,19 @@
       <path class="cls-4" d="M935,1994a4,4,0,0,1-4-4V1856.14l-61.72-61.72h-326a4,4,0,0,1-4-4V1555.78l-179.95-103.9a4,4,0,0,1-2-3.46v-710l-8.83-8.82a4,4,0,0,1-1.17-2.83V580.39l-82.1-81.31a4,4,0,0,1-1.09-2l-59.71-59.71a4,4,0,0,1-1.17-2.83V362.72a4,4,0,0,1,1.17-2.83l29.15-29.14a4,4,0,1,1,5.65,5.65l-28,28v68.51l132.9,132.9a3.67,3.67,0,0,1,.64.84l9.35,9.25a4,4,0,0,1,1.18,2.84v146.4l8.83,8.83a4,4,0,0,1,1.17,2.83v709.33l180,103.89a4,4,0,0,1,2,3.47v233H870.9a4,4,0,0,1,2.83,1.17l64.06,64.07a4,4,0,0,1,1.17,2.83V1986l182.81-.09,36.21-35.49a4,4,0,0,1,1.17-2.66l13.83-13.83a4,4,0,0,1,2.83-1.17h104.61L1395,1866.62l285.43-285.35a4,4,0,0,1,5.65,0l48.93,48.92,162.5-162.5a4.7,4.7,0,0,1,.59-.76L1962,1402.6V1388a4,4,0,0,1,1.18-2.84l69.42-69a4,4,0,0,1,5.65,0l421.53,422h8.48l104.82-104.81a4,4,0,1,1,5.65,5.65l-106,106a4,4,0,0,1-2.83,1.17h-11.8a4,4,0,0,1-2.83-1.17l-419.88-420.38-65.41,65v14.57a4,4,0,0,1-1.16,2.82l-56.08,56.44a3.88,3.88,0,0,1-.68.9L1737.8,1638.68a4,4,0,0,1-5.66,0l-48.92-48.93-283,282.9a3.87,3.87,0,0,1-.83.63l-115.92,66.93a4,4,0,0,1-2,.54h-104l-10.84,10.84a4,4,0,0,1-1.2,2.73l-39.22,38.44a4,4,0,0,1-2.8,1.14Z" transform="translate(-187.26 -54.92)"/>
     </g>
     <g class="stops">
-      <circle class="station" id="A02_INWOOD207" cx="237.29" cy="345.64" r="5"  transform="translate(-195.26 -59.92)" />
-      <circle class="station" id="A42_HOYTSCHERMERHORN" cx="980.9" cy="1994" r="5"  transform="translate(-195.26 -59.92)" />
+      <g>
+        <circle class="station highlight selected" cx="42.03" cy="285.72" r="5" />
+        <circle class="station end-of-line selected" id="A02_INWOOD207" cx="42.03" cy="285.72" r="5" />
+      </g>
+      <g>
+        <circle class="station highlight selected" cx="785.64" cy="1934.08" r="5">
+          <!-- <animate attributeName="cx" values="100%;130%;200%" duration="1s" repeatCount="indefinite" />
+          <animate attributeName="cy" values="100%;130%;200%" duration="1s" repeatCount="indefinite" /> -->
+        </circle>
+        <circle class="station selected" id="A42_HOYTSCHERMERHORN" cx="785.64" cy="1934.08" r="5" />
+      </g>
       <circle class="station" id="A32_W4TH_WASHINGTONSQ" cx="549.24" cy="1575.41" r="5"  transform="translate(-195.26 -59.92)" />
-      <circle class="station" id="H11_FARROCKAWAY" cx="2579.63" cy="1645.49" r="5"  transform="translate(-195.26 -59.92)" />
+      <circle class="station end-of-line" id="H11_FARROCKAWAY" cx="2579.63" cy="1645.49" r="5"  transform="translate(-195.26 -59.92)" />
       <circle class="station" id="A51_BROADWAYJUNCTION" cx="1673.71" cy="1606.62" r="5"  transform="translate(-195.26 -59.92)" />
       <circle class="station" id="A24_COLUMBUSCIRCLE" cx="369.79" cy="1088.25" r="5"  transform="translate(-195.26 -59.92)" />
       <circle class="station" id="A28_Penn-Station" cx="369.79" cy="1255.85" r="5"  transform="translate(-195.26 -59.92)" />
