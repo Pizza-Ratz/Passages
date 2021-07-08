@@ -175,8 +175,21 @@
   <g id="polyline2776">
     <path class="cls-8" d="M1886.41,1474.26a4,4,0,0,1-2.83-6.83L1952,1399V1384.2a4,4,0,0,1,1.18-2.83l125.68-125.68a4,4,0,0,1,5.66,5.66L1960,1385.86v14.83a4,4,0,0,1-1.17,2.83l-69.57,69.57A4,4,0,0,1,1886.41,1474.26Z" transform="translate(-187.26 -54.92)"/>
   </g>
-  <g id="Atrain">
-    <path class="cls-4" d="M935,1994a4,4,0,0,1-4-4V1856.14l-61.72-61.72h-326a4,4,0,0,1-4-4V1555.78l-179.95-103.9a4,4,0,0,1-2-3.46v-710l-8.83-8.82a4,4,0,0,1-1.17-2.83V580.39l-82.1-81.31a4,4,0,0,1-1.09-2l-59.71-59.71a4,4,0,0,1-1.17-2.83V362.72a4,4,0,0,1,1.17-2.83l29.15-29.14a4,4,0,1,1,5.65,5.65l-28,28v68.51l132.9,132.9a3.67,3.67,0,0,1,.64.84l9.35,9.25a4,4,0,0,1,1.18,2.84v146.4l8.83,8.83a4,4,0,0,1,1.17,2.83v709.33l180,103.89a4,4,0,0,1,2,3.47v233H870.9a4,4,0,0,1,2.83,1.17l64.06,64.07a4,4,0,0,1,1.17,2.83V1986l182.81-.09,36.21-35.49a4,4,0,0,1,1.17-2.66l13.83-13.83a4,4,0,0,1,2.83-1.17h104.61L1395,1866.62l285.43-285.35a4,4,0,0,1,5.65,0l48.93,48.92,162.5-162.5a4.7,4.7,0,0,1,.59-.76L1962,1402.6V1388a4,4,0,0,1,1.18-2.84l69.42-69a4,4,0,0,1,5.65,0l421.53,422h8.48l104.82-104.81a4,4,0,1,1,5.65,5.65l-106,106a4,4,0,0,1-2.83,1.17h-11.8a4,4,0,0,1-2.83-1.17l-419.88-420.38-65.41,65v14.57a4,4,0,0,1-1.16,2.82l-56.08,56.44a3.88,3.88,0,0,1-.68.9L1737.8,1638.68a4,4,0,0,1-5.66,0l-48.92-48.93-283,282.9a3.87,3.87,0,0,1-.83.63l-115.92,66.93a4,4,0,0,1-2,.54h-104l-10.84,10.84a4,4,0,0,1-1.2,2.73l-39.22,38.44a4,4,0,0,1-2.8,1.14Z" transform="translate(-187.26 -54.92)"/>
+  <g id="Atrain" class="train-line">
+    <g class="route">
+      <path class="cls-4" d="M935,1994a4,4,0,0,1-4-4V1856.14l-61.72-61.72h-326a4,4,0,0,1-4-4V1555.78l-179.95-103.9a4,4,0,0,1-2-3.46v-710l-8.83-8.82a4,4,0,0,1-1.17-2.83V580.39l-82.1-81.31a4,4,0,0,1-1.09-2l-59.71-59.71a4,4,0,0,1-1.17-2.83V362.72a4,4,0,0,1,1.17-2.83l29.15-29.14a4,4,0,1,1,5.65,5.65l-28,28v68.51l132.9,132.9a3.67,3.67,0,0,1,.64.84l9.35,9.25a4,4,0,0,1,1.18,2.84v146.4l8.83,8.83a4,4,0,0,1,1.17,2.83v709.33l180,103.89a4,4,0,0,1,2,3.47v233H870.9a4,4,0,0,1,2.83,1.17l64.06,64.07a4,4,0,0,1,1.17,2.83V1986l182.81-.09,36.21-35.49a4,4,0,0,1,1.17-2.66l13.83-13.83a4,4,0,0,1,2.83-1.17h104.61L1395,1866.62l285.43-285.35a4,4,0,0,1,5.65,0l48.93,48.92,162.5-162.5a4.7,4.7,0,0,1,.59-.76L1962,1402.6V1388a4,4,0,0,1,1.18-2.84l69.42-69a4,4,0,0,1,5.65,0l421.53,422h8.48l104.82-104.81a4,4,0,1,1,5.65,5.65l-106,106a4,4,0,0,1-2.83,1.17h-11.8a4,4,0,0,1-2.83-1.17l-419.88-420.38-65.41,65v14.57a4,4,0,0,1-1.16,2.82l-56.08,56.44a3.88,3.88,0,0,1-.68.9L1737.8,1638.68a4,4,0,0,1-5.66,0l-48.92-48.93-283,282.9a3.87,3.87,0,0,1-.83.63l-115.92,66.93a4,4,0,0,1-2,.54h-104l-10.84,10.84a4,4,0,0,1-1.2,2.73l-39.22,38.44a4,4,0,0,1-2.8,1.14Z" transform="translate(-187.26 -54.92)"/>
+    </g>
+    <g class="stops">
+      <circle class="station" id="A02_INWOOD207" cx="237.29" cy="345.64" r="5"  transform="translate(-195.26 -59.92)" />
+      <circle class="station" id="A42_HOYTSCHERMERHORN" cx="980.9" cy="1994" r="5"  transform="translate(-195.26 -59.92)" />
+      <circle class="station" id="A32_W4TH_WASHINGTONSQ" cx="549.24" cy="1575.41" r="5"  transform="translate(-195.26 -59.92)" />
+      <circle class="station" id="H11_FARROCKAWAY" cx="2579.63" cy="1645.49" r="5"  transform="translate(-195.26 -59.92)" />
+      <circle class="station" id="A51_BROADWAYJUNCTION" cx="1673.71" cy="1606.62" r="5"  transform="translate(-195.26 -59.92)" />
+      <circle class="station" id="A24_COLUMBUSCIRCLE" cx="369.79" cy="1088.25" r="5"  transform="translate(-195.26 -59.92)" />
+      <circle class="station" id="A28_Penn-Station" cx="369.79" cy="1255.85" r="5"  transform="translate(-195.26 -59.92)" />
+      <circle class="station" id="A38_FULTON" cx="745.9" cy="1794.42" r="5"  transform="translate(-195.26 -59.92)" />
+      <circle class="station" id="A43_Lafayette-Av" cx="1226.9" cy="1941.75" r="5"  transform="translate(-195.26 -59.92)" />
+    </g>
   </g>
   <g id="4Train">
     <path class="cls-6" d="M1316.32,2116.86a4,4,0,0,1-2.83-1.17l-159.94-159.94H657.6a4,4,0,0,1-4-4l-.12-17.75a3.39,3.39,0,0,1,0-.45l19.44-181.48a4.08,4.08,0,0,1,1.15-2.41l6.93-6.93V1301.35a4,4,0,0,1,1.17-2.83L701,1279.69V614.08L615.3,528.36a4,4,0,0,1-1.18-2.83V459.75a4,4,0,0,1,1.18-2.83l18.21-18.21v-296a4,4,0,0,1,8,0V440.36a4,4,0,0,1-1.17,2.83l-18.22,18.22v62.46l85.73,85.73a4,4,0,0,1,1.17,2.83v668.92a4,4,0,0,1-1.17,2.83L689,1303v441.4a4,4,0,0,1-1.17,2.83l-7.1,7.11-19.27,179.86.09,13.54H1155.2a4,4,0,0,1,2.83,1.17L1317,2107.86l132-76.21a3.93,3.93,0,0,1,1.72-2l39.71-22.93,47.3-47.3,99.27-99.07a4,4,0,0,1,2.83-1.17h58.47l196-196.21a4,4,0,0,1,5.66,5.66L1702.77,1866a4,4,0,0,1-2.83,1.18h-58.48l-98.1,97.89-47.66,47.68a3.87,3.87,0,0,1-.83.63l-38.45,22.2a4,4,0,0,1-1.72,2l-136.39,78.75A4,4,0,0,1,1316.32,2116.86Z" transform="translate(-187.26 -54.92)"/>
@@ -915,8 +928,6 @@
     <use href="#stationMarker" x="938.46" y="1869.75" transform="translate(-195.26 -59.92)" />
   </g>
   <use href="#stationMarker" x="975.9" y="1999" transform="translate(-195.26 -59.92)" />
-  <use href="#stationMarker" id="A42_HOYTSCHERMERHORN" x="975.9" y="1989" transform="translate(-195.26 -59.92)" />
-  <use href="#stationMarker" id="A32_W4TH_WASHINGTONSQ" x="546.24" y="1565.41" transform="translate(-195.26 -59.92)" />
   <use href="#stationMarker" x="566.24" y="1565.41" transform="translate(-195.26 -59.92)" />
   <use href="#stationMarker" x="556.24" y="1565.41" transform="translate(-195.26 -59.92)" />
   <g id="g9402">
@@ -924,9 +935,7 @@
   </g>
   <use href="#stationMarker" x="2482.88" y="1732.24" transform="translate(-195.26 -59.92)" />
   <use href="#stationMarker" x="2556.29" y="1658.84" transform="translate(-195.26 -59.92)" />
-  <use href="#stationMarker" x="2519.59" y="1695.53" transform="translate(-195.26 -59.92)" />
-  <use href="#stationMarker" id="H11_FARROCKAWAY" x="2574.63" y="1640.49" transform="translate(-195.26 -59.92)" />
-  <g id="g9414">
+  <use href="#stationMarker" x="2519.59" y="1695.53" transform="translate(-195.26 -59.92)" />  <g id="g9414">
     <use href="#stationMarker" x="1374.57" y="932.75" transform="translate(-195.26 -59.92)" />
     <use href="#stationMarker" x="1375.07" y="942.75" transform="translate(-195.26 -59.92)" />
   </g>
@@ -938,7 +947,6 @@
     <use href="#stationMarker" x="2023.15" y="1042" transform="translate(-195.26 -59.92)" />
   </g>
   <use href="#stationMarker" x="940.41" y="1187.42" transform="translate(-195.26 -59.92)" />
-  <use href="#stationMarker" id="A28_Penn-Station" x="364.79" y="1250.85" transform="translate(-195.26 -59.92)" />
   <g id="g9462">
     <use href="#stationMarker" x="467.24" y="1129.42" transform="translate(-195.26 -59.92)" />
   </g>
@@ -1007,7 +1015,6 @@
   <use href="#stationMarker" x="666.63" y="1860.75" transform="translate(-195.26 -59.92)" />
   <use href="#stationMarker" x="532.17" y="1867.17" transform="translate(-195.26 -59.92)" />
   <use href="#stationMarker" x="759.48" y="1798.25" transform="translate(-195.26 -59.92)" />
-  <use id="A38_FULTON" href="#stationMarker" x="740.9" y="1789.42" transform="translate(-195.26 -59.92)" />
   <use href="#stationMarker" x="661.13" y="1798.75" transform="translate(-195.26 -59.92)" />
   <g id="g9616">
     <use href="#stationMarker" x="437.24" y="1449.09" transform="translate(-195.26 -59.92)" />
@@ -1199,7 +1206,6 @@
   <g id="g10024">
     <use href="#stationMarker" x="214.79" y="358.14" transform="translate(-195.26 -59.92)" />
   </g>
-  <use href="#stationMarker" id="A02_INWOOD207" x="232.29" y="340.64" transform="translate(-195.26 -59.92)" />
   <g id="g10032">
     <use href="#stationMarker" x="259.78" y="316.13" transform="translate(-195.26 -59.92)" />
   </g>
@@ -1264,7 +1270,6 @@
   <g id="g10200">
     <use href="#stationMarker" x="1287.9" y="932.75" transform="translate(-195.26 -59.92)" />
   </g>
-  <use href="#stationMarker" id="A51_BROADWAYJUNCTION" x="1668.71" y="1601.62" transform="translate(-195.26 -59.92)" />
   <use href="#stationMarker" x="1654.57" y="1587.48" transform="translate(-195.26 -59.92)" />
   <g id="g10214">
     <use href="#stationMarker" x="2077.5" y="1051.34" transform="translate(-195.26 -59.92)" />
@@ -1358,7 +1363,6 @@
   <use href="#stationMarker" x="1817.86" y="1770" transform="translate(-195.26 -59.92)" />
   <use href="#stationMarker" x="1821.23" y="1804.75" transform="translate(-195.26 -59.92)" />
   <use href="#stationMarker" x="1821.23" y="1844.75" transform="translate(-195.26 -59.92)" />
-  <use href="#stationMarker" id="circle_287921" x="1221.9" y="1936.75" transform="translate(-195.26 -59.92)" />
   <use href="#stationMarker" x="1306.71" y="1923.92" transform="translate(-195.26 -59.92)" />
   <g id="g10404">
     <use href="#stationMarker" x="1897.91" y="1461.76" transform="translate(-195.26 -59.92)" />
@@ -1826,7 +1830,6 @@
     <use href="#stationMarker" x="566.74" y="1240.85" transform="translate(-195.26 -59.92)" />
     <use href="#stationMarker" x="556.74" y="1240.85" transform="translate(-195.26 -59.92)" />
   </g>
-  <use href="#stationMarker" id="A24_COLUMBUSCIRCLE" x="364.79" y="1083.25" transform="translate(-195.26 -59.92)" />
   <use href="#stationMarker" x="354.79" y="1083.25" transform="translate(-195.26 -59.92)" />
   <g id="g11964">
     <use href="#stationMarker" x="708.52" y="1114.8" transform="translate(-195.26 -59.92)" />
