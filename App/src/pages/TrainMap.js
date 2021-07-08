@@ -11,13 +11,13 @@ const TrainMapSVG = (props) => {
   React.useEffect(() => {
     if (imgRef.current.contentDocument) {
       const xmlDoc = imgRef.current.contentDocument
-      const allStations = xmlDoc.querySelectorAll('use[href="#stationMarker"]')
+      const allStations = xmlDoc.querySelectorAll('circle.station')
       allStations.forEach(s => s.addEventListener('click', handleStationSelect))
     }
   })
 
   return (
-    <object ref={imgRef} id="train-container" data={mapUrl} type="image/svg+xml">interactive subway map</object>
+    <object ref={imgRef} id="train-container" data={mapUrl} type="image/svg+xml" >interactive subway map</object>
   )
 }
 
