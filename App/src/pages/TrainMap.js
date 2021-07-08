@@ -1,5 +1,5 @@
 import React from 'react';
-import mapUrl from '../images/map-detail-transparent-final2.svg';
+import mapUrl from '../images/map.svg';
 
 let selectedStations = [
   'A02',
