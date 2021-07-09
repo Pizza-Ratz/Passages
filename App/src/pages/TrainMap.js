@@ -1,5 +1,6 @@
 import React from 'react';
 import mapUrl from '../images/map.svg';
+import { Sequencer } from '../components/Sequencer';
 
 let selectedStations = [
   'A02',
@@ -36,7 +37,7 @@ const TrainMapSVG = (props) => {
       const xmlDoc = imgRef.current.contentDocument
       // find all stations and label them with their MTA ID (embedded in ID string)
       let allStations = Array.from(xmlDoc.querySelectorAll('circle.station'))
-      allStations = allStations.map(s => { 
+      allStations = allStations.map(s => {
         s.mtaId = s.id.split('_')[0]
         return s
       })
@@ -56,7 +57,10 @@ const TrainMapSVG = (props) => {
   })
 
   return (
-    <object ref={imgRef} id="train-container" data={mapUrl} type="image/svg+xml" >interactive subway map</object>
+    <>
+      <Sequencer gridLength={8} />
+      <object ref={imgRef} id="train-container" data={mapUrl} type="image/svg+xml" >interactive subway map</object>
+    </>
   )
 }
 
