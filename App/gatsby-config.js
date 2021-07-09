@@ -32,5 +32,13 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `./src/markdown-pages`,
+      },
+      __key: "markdown-pages",
+    },
   ],
 };
