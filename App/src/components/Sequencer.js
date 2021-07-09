@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './layout.css'
+import '../styles/global.css'
 import * as Tone from 'tone'
 
 
@@ -18,14 +18,6 @@ export const Sequencer = ({gridLength}) => {
   Tone.Transport.setLoopPoints(0, "1m");
   Tone.Transport.loop = true;
 
-
-  // new Tone.Loop((time) => {
-  //   if (activeArray[currentBeat] && activeArray[currentBeat].isActive) {
-  //     osc.triggerAttackRelease(activeArray[currentBeat].note, '16n.', time);
-  //   }
-  // }, "8n").start(0);
-
-  // This part is flawed, but is moving the notes along correctly
   useEffect(
     () => {
       const loop = new Tone.Sequence(
@@ -42,13 +34,6 @@ export const Sequencer = ({gridLength}) => {
     },
     [ activeArray, currentBeat, osc ] // Retrigger when pattern changes
   )
-
-  // Tone.Transport.scheduleRepeat((time) => {
-  //   if (activeArray[currentBeat] && activeArray[currentBeat].isActive) {
-  //     osc.triggerAttackRelease(activeArray[currentBeat].note, '16n.', time);
-  //   }
-  //   setBeat(prev => (prev+1) % 8)
-  // }, "8n");
 
   const handleStopOrPlay = () => {
     if (isPlaying) {

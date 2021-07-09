@@ -1,17 +1,14 @@
-import * as React from "react";
-import Layout from "../components/layout";
+import React from "react";
 import TrainMap from "./TrainMap";
 
 // markup
 const IndexPage = () => {
   return (
     <>
-      <Layout>
-        <TrainMap />
-          <div className="stars"></div>
-          <div className="twinkling"></div>
-          <div className="clouds"></div>
-      </Layout>
+      <TrainMap />
+      <div className="stars"></div>
+      <div className="twinkling"></div>
+      <div className="clouds"></div>
     </>
   );
 };
