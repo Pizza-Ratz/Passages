@@ -2,6 +2,18 @@ import React, { useState, useEffect } from 'react'
 import '../styles/global.css'
 import * as Tone from 'tone'
 
+let osc
+if (typeof window !== "undefined") {
+  osc = new Tone.AMSynth().toDestination()
+  Tone.Transport.bpm.value = 100;
+  Tone.Transport.setLoopPoints(0, "1m");
+  Tone.Transport.loop = true;
+} else {
+  osc = {
+    triggerAttackRelease: () => {}
+  }
+}
+
 
 export const Sequencer = ({gridLength}) => {
 
@@ -11,12 +23,6 @@ export const Sequencer = ({gridLength}) => {
   const [hasPlayed, setHasPlayed] = useState(false)
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentBeat, setBeat] = useState(null)
-
-  const osc = new Tone.AMSynth().toDestination()
-
-  Tone.Transport.bpm.value = 100;
-  Tone.Transport.setLoopPoints(0, "1m");
-  Tone.Transport.loop = true;
 
   useEffect(
     () => {
@@ -32,7 +38,7 @@ export const Sequencer = ({gridLength}) => {
       ).start(0)
       return () => loop.dispose()
     },
-    [ activeArray, currentBeat, osc ] // Retrigger when pattern changes
+    [ activeArray, currentBeat ] // Retrigger when pattern changes
   )
 
   const handleStopOrPlay = () => {
