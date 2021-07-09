@@ -54,6 +54,49 @@ z-index:1;
 animation:move-twink-back 200s linear infinite;
 }
 
+/* Sequencer */
+
+.sequencer-container {
+  position: absolute;
+  z-index: 4;
+  height: 11%;
+  width: 44%;
+  top: 2%;
+  right: 2%;
+  /* display: flex; */
+}
+
+.sequencer {
+  display: flex;
+  height: 75%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.beat {
+  width: 12%;
+  border-radius: 4px;
+  z-index: 5;
+  border: 1px solid white;
+}
+
+
+.transport {
+  padding: 3px;
+  border: 3px solid limegreen;
+  margin-left: 50%;
+  margin-top: 5%;
+}
+
+.active {
+  background-color: steelblue;
+}
+
+.current-beat {
+  border-bottom: 5px solid red;
+}
+
 /* Train Map */
 
 .train-container{
@@ -61,9 +104,10 @@ animation:move-twink-back 200s linear infinite;
   z-index: 2;
 }
 
+
 .cls-1, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-2, .cls-21, .cls-24, .cls-25, .cls-27, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9{
 fill: none; }
-  
+
 .cls-1{
   stroke:#0a9347;
 }
@@ -155,5 +199,5 @@ fill: none; }
   drop-shadow(0 0 0.7rem rgb(0, 238, 255)),
   drop-shadow(0 0 0.8rem rgb(0, 238, 255)),
   drop-shadow(0 0 0.9rem rgb(0, 238, 255));
-} 
+}
 
