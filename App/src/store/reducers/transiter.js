@@ -1,7 +1,7 @@
-const transiterNYCSubway =
+export const transiterNYCSubway =
   "https://transiter.mta-music.nyc/systems/us-ny-subway";
 
-const actionTypes = {
+export const actionTypes = {
   LOAD_STATION: "TR_LOAD_STATION",
   LOADING_DATA: "TR_LOADING",
   DATA_LOADED: "TR_LOAD_COMPLETE",
@@ -27,7 +27,7 @@ export const loadStation = (id) => async (dispatch) => {
   dispatch(_startLoad());
   try {
     const response = await fetch(`${transiterNYCSubway}/stops/${id}`);
-    stationData = response.json();
+    stationData = await response.json();
   } catch (err) {
     throw err;
   } finally {
@@ -42,7 +42,7 @@ export const loadStation = (id) => async (dispatch) => {
   dispatch(_setStation(stationData));
 };
 
-const initialState = {
+export const initialState = {
   loading: false,
   _activeRequests: 0,
   stops: {},
