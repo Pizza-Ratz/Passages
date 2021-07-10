@@ -14,3 +14,4 @@ RUN npm run build
 FROM nginx:alpine AS final
 
 COPY --from=builder /build/public /usr/share/nginx/html/
+COPY static/*.txt /usr/share/nginx/html
