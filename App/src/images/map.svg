@@ -138,23 +138,43 @@
         }
       }
 
+      @keyframes availableStation {
+        0% { 
+          filter: hue-rotate(0deg);
+        }
+        25% {
+          filter: hue-rotate(180deg);
+        }
+        50% {
+          filter: hue-rotate(0deg);
+        }
+        75% {
+          filter: hue-rotate(-180deg);
+        }
+        100% {
+          filter: hue-rotate(0deg);
+        }
+      }
+
       #Atrain {
         stroke: #0060B6;
+        fill: #0060B6;
       }
       #Dtrain {
         stroke: #FF7F00;
+        fill: #FF7F00;
       }
       .station {
-        fill: #FFFFFF;
-        stroke: #FFFFFF;
-        brightness(95%);
         transform-box: fill-box;
         transform-origin: center;
         transition: all .1s ease-in-out;
-        transform: scale(1.2);
+        transform: scale(1.5);
+        filter: brightness(350%);
+        brightness(350%);
+        /* animation: availableStation 2s infinite 1s; */
       }
       .station:hover {
-        transform: scale(1.8);
+        transform: scale(3);
         <!-- filter: url(#pulsate) -->
       }
       .station-highlight {
@@ -174,6 +194,10 @@
         stroke-width: 4;
       }
 
+      .route {
+        filter: brightness(80%);
+        brightness(80%);
+      }
       .route path:hover, .route line:hover {
         filter: brightness(150%);
         filter: drop-shadow(5 5 10 white);
