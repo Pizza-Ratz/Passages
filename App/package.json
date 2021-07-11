@@ -16,7 +16,7 @@
     "test": "jest",
     "test:dev": "jest --watch",
     "coverage": "jest --coverage",
-    "ci": "jest --ci --runInBand --reporters=jest-junit"
+    "ci": "jest --ci --runInBand --coverage --reporters=jest-junit"
   },
   "dependencies": {
     "gatsby": "^3.8.1",
