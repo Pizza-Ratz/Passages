@@ -36,7 +36,8 @@ jobs:
       - store_test_results:
           path: ./App/reports/junit/
       # Upload coverage data to Coveralls. Uses environment var in circleci Context (see org page in Circle)
-      - coveralls/upload
+      - coveralls/upload:
+          path_to_lcov: ./App/coverage/lcov.info
 
 workflows:
   # Below is the definition of your workflow.
