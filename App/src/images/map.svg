@@ -290,6 +290,7 @@
   <g id="ShuttleTrain_polygon" data-name="ShuttleTrain polygon">
     <path class="cls-8" d="M1370.9,2179.24a4,4,0,0,1-4-4V1912.08a4,4,0,0,1,8,0v263.16A4,4,0,0,1,1370.9,2179.24Z" transform="translate(-187.26 -54.92)"/>
   </g>
+
   <path id="line2802" class="cls-13" d="M421.93,1261.1v-10.25" transform="translate(-187.26 -54.92)"/>
   <path id="polyline2805" class="cls-13" d="M434.24,1449.09h86v-21h43" transform="translate(-187.26 -54.92)"/>
   <path id="line2807" class="cls-13" d="M360.9,1438.08h10.39" transform="translate(-187.26 -54.92)"/>
@@ -298,7 +299,7 @@
   <path id="polyline2813" class="cls-13" d="M835.14,1600.75h20v20" transform="translate(-187.26 -54.92)"/>
   <path id="line2819" class="cls-14" d="M637.38,1929.12v20" transform="translate(-187.26 -54.92)"/>
   <path id="line2823" class="cls-13" d="M657.63,1798.75H756" transform="translate(-187.26 -54.92)"/>
-  <path id="line2825" class="cls-13" d="M737.4,1789.42v9.33" transform="translate(-187.26 -54.92)"/>
+  <!-- <path id="line2825" class="cls-13" d="M737.4,1789.42v9.33" transform="translate(-187.26 -54.92)"/> -->
   <path id="polyline2827" class="cls-13" d="M935,1869.75H956.9v10" transform="translate(-187.26 -54.92)"/>
   <path id="line2829" class="cls-13" d="M887.4,1916.75v30.5" transform="translate(-187.26 -54.92)"/>
   <path id="path2831" class="cls-13" d="M1073.66,2022.5" transform="translate(-187.26 -54.92)"/>
@@ -306,13 +307,13 @@
   <path id="polyline2843" class="cls-13" d="M1371.57,931.75v21.5l20.83-.5" transform="translate(-187.26 -54.92)"/>
   <path id="polyline2845" class="cls-13" d="M1554.9,1428h-10v-10" transform="translate(-187.26 -54.92)"/>
   <path id="path2847" class="cls-13" d="M1544.9,1418" transform="translate(-187.26 -54.92)"/>
-  <path id="polyline2849" class="cls-13" d="M1631.68,1586.86l9.39-9.38,24.3,24.3" transform="translate(-187.26 -54.92)"/>
+  <!-- <path id="polyline2849" class="cls-13" d="M1631.68,1586.86l9.39-9.38,24.3,24.3" transform="translate(-187.26 -54.92)"/> -->
   <path id="path2851" class="cls-13" d="M1034.9,1429.75" transform="translate(-187.26 -54.92)"/>
   <path id="polyline2853" class="cls-13" d="M936.9,1204.75l5.59-5.59,3.08-3.08-8.67-8.66" transform="translate(-187.26 -54.92)"/>
   <path id="polyline2855" class="cls-13" d="M884.9,1175.25v12.17h52" transform="translate(-187.26 -54.92)"/>
-  <path id="line2859" class="cls-13" d="M361.4,1250.85h82.5" transform="translate(-187.26 -54.92)"/>
+  <!-- <path id="line2859" class="cls-13" d="M361.4,1250.85h82.5" transform="translate(-187.26 -54.92)"/> -->
   <path id="polyline2861" class="cls-13" d="M553.24,1240.85H597.9v20" transform="translate(-187.26 -54.92)"/>
-  <path id="polyline2863" class="cls-13" d="M327.21,1097.25l14-14H359.4" transform="translate(-187.26 -54.92)"/>
+  <!-- <path id="polyline2863" class="cls-13" d="M327.21,1097.25l14-14H359.4" transform="translate(-187.26 -54.92)"/> -->
   <path id="line2865" class="cls-14" d="M726.65,1094.8v-31.75" transform="translate(-187.26 -54.92)"/>
   <path id="polyline2867" class="cls-13" d="M726.65,1094.8v20H704.9" transform="translate(-187.26 -54.92)"/>
   <path id="polyline2869" class="cls-13" d="M726.65,1176.75V1187H705" transform="translate(-187.26 -54.92)"/>
