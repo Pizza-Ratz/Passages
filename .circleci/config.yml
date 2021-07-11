@@ -14,7 +14,7 @@ jobs:
   # Below is the definition of your job to build and test your app, you can rename and customize it as you want.
   build-and-test:
     # set the working directory where the commands will be executed
-    working_directory: ~/project/App
+    working_directory: ~/App
     # These next lines define a Docker executor: https://circleci.com/docs/2.0/executor-types/
     # You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # A list of available CircleCI Docker Convenience Images are available here: https://circleci.com/developer/images/image/cimg/node
@@ -28,7 +28,7 @@ jobs:
       # Next, the node orb's install-packages step will install the dependencies from a package.json.
       # The orb install-packages step will also automatically cache them for faster future runs.
       - node/install-packages:
-          app-dir: ~/project/App/
+          app-dir: ~/App
       - run:
           name: Run CI tests
           command: npm run ci
