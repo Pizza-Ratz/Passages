@@ -15,15 +15,32 @@ if (typeof window !== "undefined") {
 }
 
 
-export const Sequencer = ({gridLength}) => {
+export const Sequencer = ({gridLength, selectedStations}) => {
 
   // Initialize sequencer state
-  const pitches = ['D4', 'E4', 'F4', 'G4', 'A4', 'B4', 'C5', 'D5'];
-  const [activeArray, setActive] = useState(pitches.map(note => ({isActive: false, note})));
   const [hasPlayed, setHasPlayed] = useState(false)
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentBeat, setBeat] = useState(null)
 
+  const pitches = ['D4', 'E4', 'F4', 'G4', 'A4', 'B4', 'C5', 'D5'];
+
+  const orderedStations = selectedStations
+    .sort((a, b) => a.localeCompare(b, 'en', { numeric: true }))
+
+  const initialSteps = pitches.map(
+    (note, idx) => ({note, isActive: true, station: orderedStations[idx]})
+  )
+
+  const [activeArray, setActive] = useState(initialSteps);
+
+  // When selected stations changes, return step array with corresponding active/inactive steps
+  useEffect(() => {
+    setActive(prevActive => prevActive.map(step =>
+      ({...step, isActive: selectedStations.includes(step.station)})
+    ))}, [selectedStations]
+  )
+
+  // Handle timing of sound events
   useEffect(
     () => {
       const loop = new Tone.Sequence(
