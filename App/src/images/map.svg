@@ -200,7 +200,7 @@
       }
       .route path:hover, .route line:hover {
         filter: brightness(150%);
-        filter: drop-shadow(5 5 10 white);
+        filter: drop-shadow(0 0 10 white);
       }
 
       #viewbox {
